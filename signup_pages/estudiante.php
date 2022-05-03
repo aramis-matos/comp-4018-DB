@@ -9,9 +9,10 @@
 </head>
 
 <body>
-    <form action="" method="POST">
+    <form action="../includes/getEstudiante.inc.php" method="POST">
         <label for="student_name">Nombre de Estudiante: </label>
         <input type="text" name="student_name">
+        <input type="submit" value="Ingresar">
     </form>
 </body>
 
