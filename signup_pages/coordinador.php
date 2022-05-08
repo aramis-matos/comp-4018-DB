@@ -9,11 +9,14 @@
 </head>
 
 <body>
-    <form action="" method="POST">
+    <form action="../includes/getCoordinador.inc.php" method="POST">
         <label for="coordinator_name">Nombre de Coordinador: </label>
-        <input type="text" name="student_name">
-        <label for="university_name">Universidad</label>
-        <input type="text" name="university_name">
+        <input type="text" name="coordinator_name">
+        <label for="uni_id">ID de la Universidad</label>
+        <input type="text" name="uni_id">
+        <label for="uni_country">Pais de la Universidad</label>
+        <input type="text" name="uni_country">
+        <input type="submit">
     </form>
 </body>
 

@@ -11,7 +11,9 @@
 <body>
     <form action="../includes/getEstudiante.inc.php" method="POST">
         <label for="student_name">Nombre de Estudiante: </label>
-        <input type="text" name="student_name">
+        <input type="text" name="student_name"> <br>
+        <label for="student_team_id">ID del equipo</label>
+        <input type="text" name="student_team_id"> <br>
         <input type="submit" value="Ingresar">
     </form>
 </body>
