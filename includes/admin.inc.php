@@ -40,6 +40,6 @@ else if (isset($_POST['modify'])) {
         exit("Not all entries valid");
     }
 
-    update('admin', $conn, $admin_id, 'id', $arr);
-    header("Location: ../signup_pages/admin.php?fail");
+    update('admin', $conn, "id = $admin_id", $arr);
+    header("Location: ../signup_pages/admin.php?success");
 }

@@ -37,8 +37,8 @@ function view ($name, $conn) {
     }
 }
 
-function update ($name, $conn, $id_val, $id_name, $arr) {
-    $query = "SELECT * FROM $name WHERE $id_name = $id_val;";
+function update ($name, $conn, $condition, $arr) {
+    $query = "SELECT * FROM $name WHERE $condition;";
     $result = mysqli_query($conn, $query);
     $result_num = mysqli_num_rows($result);
     if ($result_num == 1) {
@@ -49,11 +49,11 @@ function update ($name, $conn, $id_val, $id_name, $arr) {
             $attributes .= "$key = $val,";
         }
 
-        $query .= rtrim($attributes,',') . " WHERE $id_name = $id_val";
-
+        $query .= rtrim($attributes,',') . " WHERE $condition";
         mysqli_query($conn, $query);
         return true;
     }
+    exit("Zero or greater than 1 results found");
     return false;
 }
 
