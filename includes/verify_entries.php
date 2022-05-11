@@ -9,3 +9,8 @@ function all_valid($arr) {
     }
     return true;
 }
+
+function insert ($arr) {
+    $query = "INSERT "
+}
+
