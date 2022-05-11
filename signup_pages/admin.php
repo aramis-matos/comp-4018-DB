@@ -27,7 +27,7 @@
 
     <fieldset>
         <legend>Admin Data View</legend>
-        <form action="" method="POST">
+        <form action="../includes/admin.inc.php" method="POST">
             <input type="submit" name="view">
         </form>
     </fieldset>

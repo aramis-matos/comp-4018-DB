@@ -21,3 +21,7 @@ if (isset($_POST['insert'])) {
     header("Location: ../signup_pages/admin.php?success");
     
 }
+
+else if (isset($_POST['view'])) {
+    view('admin',$conn);
+}

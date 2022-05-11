@@ -23,3 +23,17 @@ function insert ($arr, $table, $conn) {
     return true;
 }
 
+function view ($name, $conn) {
+    $query = "SELECT * FROM $name;";
+    $result = mysqli_query($conn, $query);
+    $result_num = mysqli_num_rows($result);
+    if ($result_num > 0) {
+        while ($row = mysqli_fetch_assoc($result)) {
+            foreach ($row as $key => $val) {
+                echo "$key: $val \n";
+            }
+            echo "\n";
+        }
+    }
+}
+
