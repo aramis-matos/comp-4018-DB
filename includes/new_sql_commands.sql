@@ -116,7 +116,7 @@ CREATE TABLE team_open_ans (
 	team_id int(11) not null,
     open_id int(11) not null
 );
-
+ 
 CREATE TABLE medals (
     id int(11) not null PRIMARY KEY AUTO_INCREMENT,
 	year_date date DEFAULT CURRENT_DATE,
