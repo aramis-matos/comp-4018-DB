@@ -12,10 +12,10 @@
     
     <fieldset>
         <legend>Admin Data Insertion</legend>
-        <form action="" method="POST">
+        <form action="../includes/admin.inc.php" method="POST">
             <label for="name_insert">Admin name: </label>
             <input type="text" name="name_insert"> <br>
-            <label for="email_insert">Admin name: </label>
+            <label for="email_insert">Admin email: </label>
             <input type="text" name="email_insert"> <br>
             <label for="position_insert">Position: </label>
             <input type="text" name="position_insert"> <br>
