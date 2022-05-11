@@ -34,7 +34,7 @@
 
     <fieldset>
     <legend>Admin Data Modify</legend>
-        <form action="" method="POST">
+        <form action="../includes/admin.inc.php" method="POST">
             <label for="id_modify">ID of Admin to Modify</label>
             <input type="text" name="id_modify"><br>
             <label for="name_modify">New Name for Admin</label>
