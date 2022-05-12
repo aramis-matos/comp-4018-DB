@@ -24,8 +24,6 @@ else if (isset($_POST['view'])) {
 }
 
 else if (isset($_POST['modify'])) {
-    echo "got here";
-    exit();
     $arr = $_POST;
     $arr = format_arr($arr, 'modify');
     

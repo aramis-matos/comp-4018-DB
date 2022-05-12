@@ -50,8 +50,6 @@ function update ($name, $conn, $condition, $arr) {
         }
 
         $query .= rtrim($attributes,',') . " WHERE $condition";
-        echo $query;
-        exit();
         mysqli_query($conn, $query);
         return true;
     }

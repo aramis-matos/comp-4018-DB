@@ -37,7 +37,7 @@
         <legend>Coordinator Data Modify</legend>
         <form action="../includes/coordinator.inc.php" method="POST">
             <label for="id">Target Coordinator ID</label>
-            <input type="id"> <br>
+            <input type="text" name="id"> <br>
             <label for="name">New Coordinator Name</label>
             <input type="text" name="name"> <br>
             <label for="uni_id">New University ID</label>
