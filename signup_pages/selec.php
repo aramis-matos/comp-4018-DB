@@ -1,12 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Multiple Choice Question</title>
 </head>
+
 <body>
-    
+    <fieldset>
+        <legend>Multiple Choice Question Data Insert</legend>
+        <form action="../includes/selec.inc.php" method="POST">
+            <label for="actual_ans">Actual Answer</label>
+            <input type="text" name="actual_ans"><br>
+            <label for="coord_id">Coordinator ID</label>
+            <input type="text" name="coord_id"><br>
+            <input type="submit" name="insert">
+        </form>
+    </fieldset>
+
+    <fieldset>
+        <legend>Multiple Choice Question Data View</legend>
+        <form action="../includes/selec.inc.php" method="POST">
+            <input type="submit" name="view">
+        </form>
+    </fieldset>
+
+    <fieldset>
+        <legend>Multiple Choice Question Data Modify</legend>
+        <form action="../includes/selec.inc.php" method="POST">
+            <label for="id">Multiple Choice Question ID</label>
+            <input type="text" name="id"><br>
+            <label for="actual_ans">Actual Answer</label>
+            <input type="text" name="actual_ans"><br>
+            <label for="coord_id">Coordinator ID</label>
+            <input type="text" name="coord_id"><br>
+            <input type="submit" name="modify">
+        </form>
+    </fieldset>
 </body>
+
 </html>
