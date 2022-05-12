@@ -11,33 +11,33 @@
 <body>
     <fieldset>
         <legend>Choose Multiple Choice Data Insert</legend>
-        <form action="../includes/choose_selec_inc.php" method="POST">
+        <form action="../includes/choose_selec.inc.php" method="POST">
             <label for="admin_id_insert">Admin ID</label>
-            <input type="text" name="admin_id_insert">
+            <input type="text" name="admin_id_insert"> <br>
             <label for="selec_id_insert">Multiple Choice ID</label>
-            <input type="text" name="selec_id_insert">
+            <input type="text" name="selec_id_insert"> <br>
             <input type="submit" name="insert">
         </form>
     </fieldset>
 
     <fieldset>
         <legend>Choose Multiple Choice Data View</legend>
-        <form action="../includes/choose_selec_inc.php" method="POST">
+        <form action="../includes/choose_selec.inc.php" method="POST">
             <input type="submit" name="view">
         </form>
     </fieldset>
 
     <fieldset>
         <legend>Choose Multiple Choice Data Modify</legend>
-        <form action="../includes/choose_selec_inc.php" method="POST">
+        <form action="../includes/choose_selec.inc.php" method="POST">
             <label for="admin_id_modify">Admin ID of the Chosen Problem</label>
-            <input type="text" name="admin_id_modify">
+            <input type="text" name="admin_id_modify"> <br>
             <label for="selec_id_modify">Open Question ID of the Chosen Problem</label>
-            <input type="text" name="selec_id_modify">
+            <input type="text" name="selec_id_modify"> <br>
             <label for="new_admin_id_modify">New Admin ID of the Chosen Problem</label>
-            <input type="text" name="new_admin_id_modify">
+            <input type="text" name="new_admin_id_modify"> <br>
             <label for="new_selec_id_modify">New Multiple Choice ID of the Chosen Problem</label>
-            <input type="text" name="new_selec_id_modify">
+            <input type="text" name="new_selec_id_modify"> <br>
             <input type="submit" name="modify">
         </form>
     </fieldset>

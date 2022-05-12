@@ -50,6 +50,8 @@ function update ($name, $conn, $condition, $arr) {
         }
 
         $query .= rtrim($attributes,',') . " WHERE $condition";
+        echo $query;
+        exit();
         mysqli_query($conn, $query);
         return true;
     }
@@ -57,3 +59,14 @@ function update ($name, $conn, $condition, $arr) {
     return false;
 }
 
+function format_arr ($arr,$type) {
+    unset($arr["$type"]);
+
+    foreach($arr as $key => $val) {
+        if (!is_numeric($val)) {
+            $arr["$key"] = "'$val'";
+        }
+    }
+
+    return $arr;
+}
