@@ -209,9 +209,58 @@ ALTER TABLE exam ADD FOREIGN KEY (o3) REFERENCES open(id);
 
 ALTER TABLE exam ADD FOREIGN KEY (o4) REFERENCES open(id);
 
--- put on server once it stops crapping out
+INSERT INTO `admin`(`id`, `name`, `email`, `position`, `uni_id`) VALUES (1, 'jesus', 'jesus@upr.edu' ,'god', 1);
 
--- ALTER TABLE exam DROP FOREIGN KEY `exam_ibfk_10`; 
--- ALTER TABLE exam DROP FOREIGN KEY `exam_ibfk_11`; 
--- ALTER TABLE exam DROP FOREIGN KEY `exam_ibfk_12`; 
--- ALTER TABLE exam DROP FOREIGN KEY `exam_ibfk_13`; 
+INSERT `admin` (`id`, `name`, `email`, `position`, `uni_id`) VALUES (2 ,'juan', 'juan@upr.edu', 'horse', 1);
+
+INSERT INTO `choose_selec`(`admin_id`, `selec_id`) VALUES (1,2);
+
+INSERT INTO `coordinator`(`id`, `name`, `uni_id`, `email`, `logo`, `url`) VALUES (2 ,'chungus' ,1, 'chungus@upr.edu', 'pride flag.png', 'uglyandproud.com');
+
+INSERT INTO `coordinator`(`id`, `name`, `uni_id`, `email`, `logo`, `url`) VALUES (3, 'jim' ,1, 'gg@ez.com', 'git gut', 	'gg.com');
+
+INSERT INTO `coordinator`(`id`, `name`, `uni_id`, `email`, `logo`, `url`) VALUES (4, 'gg', 1 ,'gg@ez.com', 	'lol', 'kek.com');
+
+INSERT INTO `exam`(`id`, `s1`, `s2`, `s3`, `s4`, `s5`, `s6`, `s7`, `s8`, `o1`, `o2`, `o3`, `o4`, `admin_id`) VALUES (3, 	2, 	2, 	2, 	2, 	2, 	2, 	2, 	2, 	1, 	1, 	1, 	1, 	1);
+
+INSERT INTO `has_open`(`exam_id`, `open_id`) VALUES (3,1);
+
+INSERT INTO `has_selec`(`selec_id`, `exam_id`) VALUES (3,3);
+
+INSERT INTO `medals`(`id`, `year_date`, `gold_team_id`, `silver_team_id`, `bronze_team_id`) VALUES (1, 2022-05-12, 	2, 	3, 	4);
+
+INSERT INTO `open`(`id`, `actual_ans`, `year`, `coord_id`) VALUES (1, 'duh' ,2022-05-12, 2);
+
+INSERT INTO `open`(`id`, `actual_ans`, `year`, `coord_id`) VALUES (2 ,'420' ,2022-05-12 , 3);
+
+INSERT INTO `open`(`id`, `actual_ans`, `year`, `coord_id`) VALUES (3 ,'blaze it', 2022-05-12, 4);
+
+INSERT INTO `open`(`id`, `actual_ans`, `year`, `coord_id`) VALUES (4, 'nuggies', 2022-05-12, 3);
+
+INSERT INTO `possible_ans`(`ans`, `selec_id`) VALUES ('duh',2);
+
+INSERT INTO `possible_ans`(`ans`, `selec_id`) VALUES ('chungus', 2);
+
+INSERT INTO `selec` (`id`, `actual_ans`, `year`, `coord_id`) VALUES (NULL, 'e=mc^2', '2022-05-11', '2'), (NULL, 'the quran', '2022-05-11', '4'), (NULL, 'sapiens', '2022-05-12', '3');
+
+INSERT INTO `student` (`id`, `name`, `age`, `grade`, `school`, `coord_id`) VALUES (NULL, 'erza', '13', '8', 'John Cena Elementary School', '2'), (NULL, 'erza', '13', '8', 'John Cena Elementary School', '3'), (NULL, 'manuel', '12', '7', 'John Cena Elementary School', '4'), (NULL, 'mumei', '15', '9', 'vamos a la playa', '2');
+
+INSERT INTO `team` (`id`, `score`, `year_participated`, `est_1`, `est_2`, `est_3`, `uni_id`, `coord_id`) VALUES (NULL, '12', '2022-05-12', '1', '2', '3', '1', '2'), (NULL, '16', '2022-05-12', '2', '3', '4', '1', '4');
+
+INSERT INTO `team_open_ans`(`team_id`, `open_id`) VALUES (2,3);
+
+INSERT INTO `team_selec_ans`(`team_id`, `selec_id`) VALUES (2,4);
+
+INSERT INTO `university` (`id`, `name`, `country`) VALUES (NULL, 'upr', 'pr'), (NULL, 'MIT', 'USA');
+
+INSERT INTO `team_selec_ans`(`team_id`, `selec_id`) VALUES (1,1);
+
+INSERT INTO `team_selec_ans`(`team_id`, `selec_id`) VALUES (1,2);
+
+INSERT INTO `university` (`id`, `name`, `country`) VALUES (NULL, 'upr', 'pr'), (NULL, 'MIT', 'USA');
+
+INSERT INTO `win_total`(`medal_id`, `team_id`) VALUES (1,1);
+
+INSERT INTO `win_total`(`medal_id`, `team_id`) VALUES (1,2);
+
+INSERT INTO `win_uni`(`medal_id`, `team_id`) VALUES (1,1);
