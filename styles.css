@@ -45,3 +45,39 @@ header {
 .wrapper li a:hover {
     color: red;
 }
+
+body {
+    background-color: #73c26d;
+}
+
+form {
+    margin: 1em 0.5em;
+
+}
+
+fieldset {
+    width: fit-content;
+    margin: 1em 2%;
+    border: 2px solid #163b13;   
+}
+
+input[type="submit"] {
+    background-color: #e2ffe0;
+    
+}
+
+input[name="view"] {
+    margin: 4px 0;
+}
+
+input[type*="text"] {
+    border: 2px solid #fff;
+    border-radius: 2em;
+    margin-left: 1em;
+}
+
+input[type*="submit"] {
+    border-radius: 2em;
+    padding: 3px;
+    margin-top: 1em;
+}
